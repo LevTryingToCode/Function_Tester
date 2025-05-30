@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewDebuggerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Function Tester"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewMadeBY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@id/textViewDebuggerTitle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="by LEV"
+        tools:ignore="HardcodedText" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDebuggerTitle"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/buttonAvailability"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#000000"
+                android:text="Basic Sensor Availability"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+            <Button
+                android:id="@+id/buttonPicture"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="Picture Test"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+            <Button
+                android:id="@+id/buttonScreen"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="Screen Color Test"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+            <Button
+                android:id="@+id/buttonQR"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="QR Code Reader"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+            <Button
+                android:id="@+id/buttonGyroscopeTest"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="Gyroscope Test"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/buttonKeyboard"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:textSize="20sp"
+                android:text="Keyboard Test"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:id="@+id/imageViewPicSave"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Picture"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tableLayout"
+        android:adjustViewBounds="true"
+        tools:ignore="ContentDescription,HardcodedText" />
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Remove picture"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+         android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        tools:ignore="HardcodedText"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</RelativeLayout>

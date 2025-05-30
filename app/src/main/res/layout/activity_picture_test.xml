@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Picture Test"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:id="@+id/imageViewPicture"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Picture"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save to the Menu"
+        android:backgroundTint="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buttonSelect"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select an Image"
+        android:backgroundTint="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buttonQuit"
+        tools:ignore="HardcodedText"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Back to Test Selector"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        tools:ignore="HardcodedText"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
